@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import { Product } from '../../../state/types/product.type';
 import { ProductServices } from '../../../services/productService';
 import ItemsList from './ItemsList';
 import SearchBox from './SearchBox';
 import WithLoading from '../../../hooks/hoc/WithLoader';
-import { Category } from '../../../state/types/category.type';
 import { CategoryServices } from '../../../services/categoryService';
 import { CategoriesList } from './Categories/';
 import styles from './styles';
@@ -13,6 +11,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { RootBottomTabNavigationProp } from '../../../types';
 import GoToAddProducts from './GoToAddProducts';
+import { Category } from '../../Category/Category.type';
+import { Product } from '../Product.type';
 
 const ProductsListScreen = () => {
   const [products, setProducts] = useState<Product[]>([]);

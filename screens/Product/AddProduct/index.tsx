@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
 import ProductForm from './ProductForm';
-import { Category } from '../../../state/types/category.type';
 import { CategoryServices } from '../../../services/categoryService';
-import { Product } from '../../../state/types/product.type';
 import styles from './styles';
 import { ScrollView } from 'react-native-gesture-handler';
 import { ProductServices } from '../../../services/productService';
+import { Product } from '../Product.type';
+import { Category } from '../../Category/Category.type';
 
 export default function AddProductScreen() {
   const [categories, setCategories] = useState<Category[]>([]);

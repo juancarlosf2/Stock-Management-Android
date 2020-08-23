@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions } from 'react-native';
-import { Category } from '../../state/types/category.type';
+import { Category } from './Category.type';
 import { FlatList } from 'react-native-gesture-handler';
 import { Block } from '../../components';
 

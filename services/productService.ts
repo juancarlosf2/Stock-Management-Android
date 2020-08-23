@@ -1,6 +1,6 @@
-import { Product } from '../state/types/product.type';
 import axios from 'axios';
 import { uploadImage } from './uploadImage';
+import { Product } from '../screens/Product/Product.type';
 
 // const url = "https://localhost:5001/api/products";
 const url = 'https://stockmanagement2017.azurewebsites.net/api/products';
