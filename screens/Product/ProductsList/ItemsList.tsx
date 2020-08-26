@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, FlatList, Dimensions } from 'react-native';
-import { Product } from '../../../state/types/product.type';
 import ItemCard from './ItemCard';
+import { Product } from '../Product.type';
 
 interface Props {
   products: Product[];

@@ -1,5 +1,5 @@
-import { Category } from '../state/types/category.type';
 import axios from 'axios';
+import { Category } from '../screens/Category/Category.type';
 
 // const url = "https://localhost:44397/api/categories";
 const url = 'https://stockmanagement2017.azurewebsites.net/api/categories';

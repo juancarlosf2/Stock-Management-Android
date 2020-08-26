@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Category } from '../../state/types/category.type';
 import { useNavigation } from '@react-navigation/native';
 import { ProductsScreenNavigationProp } from '../../types';
 import { CategoryServices } from '../../services/categoryService';
@@ -7,6 +6,7 @@ import CategoriesList from './CategoriesList';
 import WithLoading from '../../hooks/hoc/WithLoader';
 import { View } from '../../components/Themed';
 import { Theme } from '../../constants';
+import { Category } from './Category.type';
 
 function CategoriesScreen() {
   const [categories, setCategories] = useState<Category[]>([]);

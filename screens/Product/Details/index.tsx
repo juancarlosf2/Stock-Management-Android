@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { View, ScrollView, ImageBackground } from 'react-native';
-import { Product } from '../../../state/types/product.type';
 import { ProductServices } from '../../../services/productService';
 import Header from '../../../components/Header';
 import PhotoContainer from './PhotoContainer';
 import { CategoryServices } from '../../../services/categoryService';
-import { Category } from '../../../state/types/category.type';
 import WithLoading from '../../../hooks/hoc/WithLoader';
 import ProductCard from './ProductCard';
 import styles from './styles';
 import { images } from '../../../constants';
 import { useRoute } from '@react-navigation/native';
 import { ProductDetailsScreenRouteProp } from '../../../types';
+import { Product } from '../Product.type';
+import { Category } from '../../Category/Category.type';
 
 function ProductDetailsScreen() {
   const [product, setProduct] = useState<Product>({

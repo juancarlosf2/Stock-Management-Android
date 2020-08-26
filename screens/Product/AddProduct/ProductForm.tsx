@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
-import { Product } from '../../../state/types/product.type';
-import { Category } from '../../../state/types/category.type';
 import { Theme } from '../../../constants';
 import { Formik } from 'formik';
 import Input from '../../../components/Input';
 import CurryImagePicker from '../../../components/CurryImagePicker';
 import { Picker } from '@react-native-community/picker';
+import { Product } from '../Product.type';
+import { Category } from '../../Category/Category.type';
 
 interface Props {
   onSubmit: (
